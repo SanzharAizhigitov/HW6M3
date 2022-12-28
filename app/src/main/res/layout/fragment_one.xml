@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_one"
+    android:padding="16dp"
+    android:background="@drawable/ic_launcher_background"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now_playing"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginStart="90dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_of_song"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="600dp"
+        android:textStyle="italic"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/singer"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="650dp"
+        android:textStyle="italic"
+
+        />
+
+</FrameLayout>

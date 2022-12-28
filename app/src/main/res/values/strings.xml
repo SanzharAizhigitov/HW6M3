@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HW6Month3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="now_playing">Now playing</string>
+    <string name="name_of_song">Name of song</string>
+    <string name="singer">Singer</string>
+    <string name="_1">1</string>
+    <string name="time">time</string>
+</resources>
