@@ -28,6 +28,7 @@ class SingAdapter(
     }
 
     override fun getItemCount(): Int = songList.size
+
     inner class SingViewHolder(private val binding: ItemSongBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {

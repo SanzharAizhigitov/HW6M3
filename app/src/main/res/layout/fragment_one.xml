@@ -26,7 +26,7 @@
         android:text="@string/name_of_song"
         android:textColor="@color/white"
         android:textSize="40sp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="200dp"
         android:textStyle="italic"
 
         />
@@ -36,7 +36,7 @@
         android:text="@string/singer"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="250dp"
         android:textStyle="italic"
 
         />

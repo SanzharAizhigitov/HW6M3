@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:id="@+id/song_RV"
+        android:id="@+id/songRV"
         tools:listitem="@layout/item_song"
 
 

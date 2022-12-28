@@ -12,13 +12,14 @@ import com.geektech.hw6month3.databinding.FragmentTwoBinding
 
 
 class Fragment_two : Fragment() {
-    private var  list = arrayListOf<Song>()
+    private var list = arrayListOf<Song>()
     lateinit var binding: FragmentTwoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = FragmentTwoBinding.inflate(layoutInflater)
         binding.root
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,8 +31,10 @@ class Fragment_two : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loadData()
-        val Adapter = SingAdapter(list, this::onClick)
-        binding.songRV.adapter = Adapter
+        val adapter = SingAdapter(list, this::onClick)
+        loadData()
+        binding.songRV.adapter = adapter
+        loadData()
     }
 
     companion object {
@@ -40,6 +43,7 @@ class Fragment_two : Fragment() {
         fun newInstance() = Fragment_two()
 
     }
+
     private fun loadData() {
         list.add(Song("Группа бактерий на рукаве", "АпчЦой", "1", "1:59"))
         list.add(Song("Кабы не было тупых", "Из мультика Трое из Просточакшино", "2", "3:00"))
@@ -57,7 +61,8 @@ class Fragment_two : Fragment() {
         list.add(Song("Какдилак", "МоргРаботник", "4", "0:57"))
         list.add(Song("Какдилак", "МоргРаботник", "4", "0:57"))
     }
-    private fun onClick(position: Int){
+
+    private fun onClick(position: Int) {
         val intent = Intent(activity, SecondActivity::class.java)
         intent.putExtra("nameofsong", list[position].nameofsong)
         startActivity(intent)
